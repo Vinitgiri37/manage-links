@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Link Manager</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="app-root">
+
+<header class="app-header">
+<div class="header-main">
+<h1>Link Manager</h1>
+<p class="subtitle">
+Save, organize and quickly find your favorite links.
+</p>
+</div>
+
+<div class="header-actions">
+<input
+id="searchInput"
+type="search"
+placeholder="Search by title, domain or description..."
+autocomplete="off"
+/>
+</div>
+</header>
+
+<main class="app-main">
+
+<section class="add-link-card">
+
+<form id="addLinkForm" class="add-link-form">
+
+<label for="urlInput" class="input-label">Add a new link</label>
+
+<div class="input-row">
+
+<input
+id="urlInput"
+type="url"
+placeholder="Paste a URL, e.g. https://example.com/article"
+required
+/>
+
+<button type="submit" class="primary-btn">
+Save link
+</button>
+
+</div>
+
+<p class="help-text">
+The app will try to fetch the website title, description and logo automatically.
+</p>
+
+</form>
+
+<div id="formStatus" class="form-status" aria-live="polite"></div>
+
+</section>
+
+<section>
+
+<div class="list-header">
+<h2>Saved links</h2>
+<span id="linkCount" class="pill">0 items</span>
+</div>
+
+<div id="linksEmptyState" class="empty-state">
+<p>No links yet. Add your first link above.</p>
+</div>
+
+<div id="linksContainer" class="links-grid"></div>
+
+</section>
+
+</main>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

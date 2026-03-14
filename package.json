@@ -1,0 +1,14 @@
+{
+  "name": "link-manager",
+  "version": "1.0.0",
+  "description": "Simple Link Manager web application (HTML, CSS, JS, localStorage).",
+  "scripts": {
+    "start": "echo \"Open index.html in your browser\""
+  },
+  "keywords": [
+    "links",
+    "bookmark",
+    "localStorage"
+  ]
+}
+
