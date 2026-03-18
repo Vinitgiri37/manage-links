@@ -55,9 +55,7 @@ No build step or server is strictly required:
 1. Open `index.html` directly in your browser (double‑click or drag into a tab), **or**
 2. Serve the folder via a simple static server, e.g. with Node:
 
-   ```bash
-   npx serve .
-   ```
+ 
 
 Your saved links will be kept in the browser's `localStorage` under the key `linkManager.links.v1`.
 
